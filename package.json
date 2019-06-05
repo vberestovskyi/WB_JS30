@@ -1,0 +1,23 @@
+{
+  "name": "wb_js30",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vberestovskyi/WB_JS30.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vberestovskyi/WB_JS30/issues"
+  },
+  "homepage": "https://github.com/vberestovskyi/WB_JS30#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-google": "^0.13.0"
+  }
+}
