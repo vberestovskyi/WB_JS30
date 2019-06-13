@@ -6,7 +6,41 @@
   <script type="text/javascript" src="http://www.cornify.com/js/cornify.js"></script>
 </head>
 <body>
+  <style>
+  h1 {
+    text-align: center;
+    color: #ffc600;
+    font-size: 3em;
+  }  
+  div {
+    text-align: center;
+    font-size: 2em;
+    color: rgb(25, 151, 0); 
+  }
+  .guessed {
+    font-size: 4em;
+    color:#ff55ff;
+  }
+  </style>
+<h1>Key Sequence Detection</h1>
+<div>What is the secret word?</div>
+
 <script>
+  const secretCode = 'secret';
+  const userInput = [];
+  document.addEventListener('keyup',(e) => {
+    
+  userInput.push(e.key);
+  userInput.splice(-userInput.length - 1, userInput.length - secretCode.length);
+  console.log(userInput); 
+
+  if (userInput.join('').includes(secretCode)){
+const myText = document.querySelector('div');
+myText.innerText = "You've nailed it!!"
+myText.classList.add('guessed');
+cornify_add();
+  };
+  })
 </script>
 </body>
 </html>
